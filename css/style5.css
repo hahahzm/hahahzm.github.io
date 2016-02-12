@@ -7,7 +7,7 @@
 }
 
 body  {
-	background: #1abc9c;
+	background: #ffffff;
 }
 
 .container {
@@ -64,7 +64,7 @@ body  {
 	display: block;
 	width: 100%;
 	height: 8%;
-	background-color: #fff;
+	background-color: #aaa;
 	font-size: 0px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -82,7 +82,7 @@ body  {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: #aaa;
 	content: '';
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
@@ -236,5 +236,5 @@ body  {
 .bt-menu ul:first-of-type li a:focus,
 .bt-menu ul li a:hover:before,
 .bt-menu ul li a:focus:before {
-	color: #1abc9c;
+	color: #86C166;
 }
