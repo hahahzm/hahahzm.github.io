@@ -21,7 +21,6 @@
 
 		var menu = document.getElementById( 'bt-menu' ),
 			trigger = menu.querySelector( 'a.bt-menu-trigger' ),
-			// triggerPlay only for demo 6
 			triggerPlay = document.querySelector( 'a.bt-menu-trigger-out' ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
