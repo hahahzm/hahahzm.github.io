@@ -9,18 +9,18 @@
 		<meta name="keywords" content="personal website, chuxuan, student, software, photography" />
 		<meta name="author" content="Chuxuan Chen" />
 		<link rel="shortcut icon" href="favicon.ico">
-		<!--link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!--link rel="stylesheet" type="text/css" href="css/normalize.css" /-->
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<link rel="stylesheet" type="text/css" href="css/icons.css" />
 		<link rel="stylesheet" type="text/css" href="css/style5.css" />
-		<link rel="stylesheet" type="text/css" href="css/tabs.css" /-->
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<script src="js/tabs.js"></script>
 		<link rel="stylesheet" href="./css/main.min.css" type="text/css">
 		<link href="./css/css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="./js/dat.gui.min.js"></script>
+		<!--script type="text/javascript" src="./js/dat.gui.min.js"></script-->
 		<script type="text/javascript" src="./js/gl-matrix-min.js"></script>
 		<script type="text/javascript" src="./js/wgl.min.js"></script>
 		<script type="text/javascript" src="./js/main.min.js"></script>
@@ -59,10 +59,10 @@
 		    	vec2 p1 = vec2(aPosition1.xy * rate1 + aPosition2.xy * rate2 + aPosition3.xy * rate3 + aPosition4.xy * rate4 + aPosition5.xy * rate5);
 		    	vec2 p2 = vec2(aPosition1.zw * rate1 + aPosition2.zw * rate2 + aPosition3.zw * rate3 + aPosition4.zw * rate4 + aPosition5.zw * rate5);
 
-		    	vec4 color = vec4(0.5, 0.5, 0.5, 0.0);
-		    	color.r += rand(aPosition1.xy * random * 2.0) * 0.5;
-		    	color.g += rand(aPosition1.xy * random * 8.0) * 0.5;
-		    	color.b += rand(aPosition1.xy * random * 16.0) * 0.5;
+		    	vec4 color = vec4(0, 0, 0, 0.0);
+		    	color.r += rand(aPosition1.xy * random * 2.0) * 0.01;
+		    	color.g += rand(aPosition1.xy * random * 8.0) * 0.01;
+		    	color.b += rand(aPosition1.xy * random * 16.0) * 0.01;
 
 		    	float z = sin(aDepth.x + rotation * aDepth.y)*depth*2.0 - depth;
 
@@ -99,55 +99,60 @@
 
 
 
-		<input id="dummy" type="text" name="dummy" value="" style="opacity: 0; position: absolute; z-index: -1;">
-		<div id="container" style="display: block;">
-
-			<div id="not_supported" style="display: none;">
-				<p>Your web browser <strong>is not supported.</strong><br>This content needs <strong>WebGL</strong> &amp;
-					<strong>JavaScript</strong>.</p>
-			</div>
-
-			<div id="startup" style="display: none;">
-				<p>STARTUP...</p>
-			</div>
-
-			<canvas id="wgl" width="300" height="200" style="display: inline;"></canvas>
-
-			<audio id="over" preload="auto">
-				<source src="../sound/over.mp3" type="audio/mp3">
-				<source src="../sound/over.wav" type="audio/wav">
-			</audio>
-			<audio id="click" preload="auto">
-				<source src="../sound/click.mp3" type="audio/mp3">
-				<source src="../sound/click.wav" type="audio/wav">
-			</audio>
-	    
-
-			<!--script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script-->
-
-
-		</div>
 
 
 
 
 
-		<!--
+		
 		<div class="container">
 
+			
 			<div class="tabContent" id="about">
-				
+			
+				<div class="lightning" id="intro">
+					<input id="dummy" type="text" name="dummy" value="" style="opacity: 0; position: absolute; z-index: -1;">
+					<div id="container" style="display: block;">
+
+						<div id="not_supported" style="display: none;">
+							<p>Your web browser 
+							<strong>is not supported.</strong>
+							<br>This content needs 
+							<strong>WebGL</strong> &amp;
+								<strong>JavaScript</strong>.</p>
+						</div>
+
+						<div id="startup" style="display: none;">
+							<p>STARTUP...</p>
+						</div>
+
+						<canvas id="wgl" width="100" height="100" style="display: inline;"></canvas>
+
+						<audio id="over" preload="auto">
+							<source src="../sound/over.mp3" type="audio/mp3">
+							<source src="../sound/over.wav" type="audio/wav">
+						</audio>
+						<audio id="click" preload="auto">
+							<source src="../sound/click.mp3" type="audio/mp3">
+							<source src="../sound/click.wav" type="audio/wav">
+						</audio>
+				    </div>
+						<!--script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script-->
+				</div>
+
+
+
+
 
 
 				<header class="codrops-header">
-
-					<h1>Hello!!!!!!!!!!!!!!. </h1>
+					<h1>Hello. </h1>
 					<div>
 						<p>My name is Chuxuan. </p>
 						<p>I am a senior at Purdue University studying Physics and Computer Science. </p>
 						<p>My passions lie in graphics, machine learning, system programming and density functional theory. </p>
 						<p>I relish working in collaborative environments with other creative minds. </p>
-						<p>In addition, I love photography, anime, tearing down machines and cooking shoyu <del>instant</del> ramen. </p>
+						<p>In addition, I love photography, anime, tearing down machines and cooking <del>instant</del> ramen. </p>
 						<p></p>
 						<p></p>
 						<p></p>
@@ -243,7 +248,7 @@
 					<li><a href="https://github.com/hahahzm" class="bt-icon icon-github">icon-github</a></li>
 				</ul>
 			</nav>
-		</div>-->
+		</div>
 		<!-- /container -->
 	</body>
 	<script src="js/classie.js"></script>
