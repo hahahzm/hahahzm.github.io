@@ -15,6 +15,11 @@
 	src: url('../fonts/truetype/pro.ttf') format('truetype');
 }
 
+@font-face {
+	font-family: 'Sharp';
+	src: url('../fonts/truetype/ice.ttf') format('truetype');
+}
+
 body {
 	color: #aaa;
 	/*font-family: 'Lato', Arial, sans-serif;*/
@@ -26,7 +31,7 @@ a:focus {
 }
 
 .codrops-header {
-	font-family: 'All Capital';
+	font-family: 'Sharp';
 	position: relative;
 	margin: 0 auto;
 	max-width: 60%;
@@ -47,6 +52,7 @@ a:focus {
 }
 
 .codrops-header h1 {
+	font-family: 'All Capital';
 	margin: 0;
 	font-weight: 300;
 	font-size: 2.625em;
